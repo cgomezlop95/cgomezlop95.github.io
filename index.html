@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is a brief portfolio about myself, my studies and my professional experience.">
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/dog .png">
+    <script src="https://kit.fontawesome.com/aa2575a9ad.js" crossorigin="anonymous"></script>
+    <title>Portfolio de Cristina</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <img
+          id="foto"
+          src="picture.jpeg"
+          alt="Cristina's picture"
+          />
+      </div>
+      <nav id="botones">
+        <button onclick="document.getElementById('education').innerHTML = Education();">Educación</button>
+        <button onclick="document.getElementById('experience').innerHTML = Experience();">Experiencia</button>
+        <button onclick="document.getElementById('future').innerHTML = Future();">Futuro</button>
+      </nav>
+    </header>
+
+    <main>
+
+      <article id="intro">
+        <h4>Cristina Gómez López</h4>
+        <p>Soy estudiante de Desarrollo Web Full Stack en The Bridge.</p>
+        <p>Actualmente vivo en Madrid, aunque he estado trabajando algunos años en Praga, República Checa.</p>
+        <p>Hablo español, inglés y francés.</p>
+      </article>
+      
+      <div id="java">
+        <h4>Un poco más sobre mí...</h4>
+        <p id="education"></p>
+        <p id="experience"></p>
+        <p id="future"></p>
+      </div>
+
+    </main>
+
+    <footer>
+      <article id="contacto">
+        <h4>Información de contacto</h4>
+        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:c.gomezlop95@gmail.com" target="_blank">Enviar un email</a></p>
+        <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/cristina-g%C3%B3mez-l%C3%B3pez-40a90611a/" target="_blank">Conectar en Linkedin</a></p>
+      </article>
+      <p id="copyright">&#169 2023. Cristina Gómez López</p>
+    </footer>
+
+    <script src="portfolio.js"></script>
+
+  </body>
+</html>
